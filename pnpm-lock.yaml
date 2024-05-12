@@ -11,6 +11,9 @@ dependencies:
   '@ts-stack/markdown':
     specifier: ^1.4.0
     version: 1.5.0
+  device-detector-js:
+    specifier: ^3.0.3
+    version: 3.0.3
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -26,6 +29,9 @@ dependencies:
   solid-js:
     specifier: 1.7.1
     version: 1.7.1
+  zod:
+    specifier: ^3.22.4
+    version: 3.23.8
 
 devDependencies:
   '@babel/preset-typescript':
@@ -37,6 +43,9 @@ devDependencies:
   '@rollup/plugin-commonjs':
     specifier: ^25.0.0
     version: 25.0.7(rollup@3.23.0)
+  '@rollup/plugin-json':
+    specifier: ^6.1.0
+    version: 6.1.0(rollup@3.23.0)
   '@rollup/plugin-node-resolve':
     specifier: 15.0.1
     version: 15.0.1(rollup@3.23.0)
@@ -623,6 +632,19 @@ packages:
       glob: 8.1.0
       is-reference: 1.2.1
       magic-string: 0.30.9
+      rollup: 3.23.0
+    dev: true
+
+  /@rollup/plugin-json@6.1.0(rollup@3.23.0):
+    resolution: {integrity: sha512-EGI2te5ENk1coGeADSIwZ7G2Q8CJS2sF120T7jLw4xFw9n7wIOXHo+kIYRAoVpJAN+kmqZSoO3Fp4JtoNF4ReA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.1.0(rollup@3.23.0)
       rollup: 3.23.0
     dev: true
 
@@ -1514,6 +1536,11 @@ packages:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
     dev: true
+
+  /device-detector-js@3.0.3:
+    resolution: {integrity: sha512-jM89LJAvP6uOd84at8OlD9dWP8KeYCCHUde0RT0HQo/stdoRH4b54Xl/fntx2nEXCmqiFhmo+/cJetS2VGUHPw==}
+    engines: {node: '>= 8.11.4'}
+    dev: false
 
   /didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -4545,3 +4572,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+    dev: false
